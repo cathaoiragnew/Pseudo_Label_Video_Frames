@@ -230,8 +230,8 @@ if __name__ == "__main__":
     parser.add_argument("--model_confidence", type=float, default=model_confidence, help="Model confidence threshold for predictions")
     parser.add_argument("--batch_size", type=int, default=batch_size, help="Batch size for inference")
     parser.add_argument("--classes_of_interest", type=str, nargs="*", default=classes_of_interest, help="List of classes of interest")
-    parser.add_argument("--min_bb_area", type=int, default=min_bb_area, help="Minimum bounding box area expressed as percentage of image area in decimal")
-    parser.add_argument("--max_bb_area", type=int, default=max_bb_area, help="Maximum bounding box area expressed as percentage of image area in decimal")
+    parser.add_argument("--min_bb_area", type=float, default=min_bb_area, help="Minimum bounding box area expressed as percentage of image area in decimal")
+    parser.add_argument("--max_bb_area", type=float, default=max_bb_area, help="Maximum bounding box area expressed as percentage of image area in decimal")
     parser.add_argument("--image_name", type=str, default=image_name, help="Naming convention for files")
 
     # Parse arguments
