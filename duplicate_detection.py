@@ -27,6 +27,7 @@ warnings.simplefilter('ignore') # In any case, try to avoid warnings as much as 
 
  # Load the CLIP model and its preprocessing pipeline
 device = "cuda" if torch.cuda.is_available() else "cpu"
+print("Device used:", device)
 model, preprocess = clip.load("ViT-B/32", device=device)
 
 def load_images(image_dir):
