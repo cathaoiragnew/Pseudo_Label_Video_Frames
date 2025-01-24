@@ -19,10 +19,10 @@
         ```bash
         python create_pseudo_data.py [OPTIONS]
         ```
-    Example
+Example running on all frames of ./video.mp4 video.
     - **For Python**:
         ```bash
-        python create_pseudo_data.py --input_video_path ./video.mp4 --n_runs 'all' 
+        python create_pseudo_data.py --input_video_path "street_video.mp4" --n_runs "all" 
         ```
 
  ### Arguments Table
@@ -30,7 +30,7 @@
 | Argument                            | Type     | Description                                                                              | Example                             |
 |-------------------------------------|----------|------------------------------------------------------------------------------------------|-------------------------------------|
 | `--n_runs`                          | Integer or 'all'  | Number of frames to process.                                                            | `--n_runs 10`                      |
-| `--info`                            | String   | Debugging information flag (`True` or `False`).                                         | `--info True`                      |
+| `--info`                            | Boolean   | Debugging information flag (True or False).                                         | `--info True`                      |
 | `--image_size`                      | Integer  | Image size as `(width, height)`.                                                        | `--image_size (1280,720)`            |
 | `--input_video_path`                | String   | Path to the input video file.                                                           | `--input_video_path ./video.mp4`   |
 | `--extracted_frames_dir`            | String   | Directory for storing extracted frames.                                                 | `--extracted_frames_dir ./frames/` |
@@ -40,13 +40,13 @@
 | `--json_predictions_path`           | String   | Path for JSON predictions.                                                              | `--json_predictions_path ./predictions.json` |
 | `--json_predictions_path_filtered`  | String   | Path for filtered JSON predictions.                                                     | `--json_predictions_path_filtered ./filtered_predictions.json` |
 | `--heatmaps_dir`                    | String   | Directory to store heatmaps.                                                            | `--heatmaps_dir ./heatmaps/`       |
-| `--focus_tol`                       | Float    | Focus tolerance value.                                                                  | `--focus_tol 0.1`                  |
+| `--focus_tol`                       | Float    | Focus tolerance value.                                                                  | `--focus_tol 0.05`                  |
 | `--entropy_tol`                     | Float    | Signal-to-noise ratio tolerance value.                                                  | `--entropy_tol 0.975`               |
 | `--clip_dup_threshold`              | Float    | Clip embedding cosine similarity threshold for duplication detection.                   | `--clip_dup_threshold 0.9`         |
 | `--model_type`                      | String   | Object detection model from Hugging Face.                                               | `--model_type facebook/detr-resnet-50`          |
 | `--model_confidence`                | Float    | Model confidence threshold for predictions.                                             | `--model_confidence 0.85`          |
 | `--batch_size`                      | Integer  | Batch size for inference.                                                               | `--batch_size 16`                  |
-| `--classes_of_interest`             | String   | List of classes of interest.                                                            | `--classes_of_interest ["person", "bus", "bicycle"]` |
-| `--min_bb_area`                     | Integer  | Minimum bounding box area as a percentage of the image area (in decimal).               | `--min_bb_area 0.01`               |
-| `--max_bb_area`                     | Integer  | Maximum bounding box area as a percentage of the image area (in decimal).               | `--max_bb_area 0.75`                |
+| `--classes_of_interest`             | List  | List of classes of interest.                                                            | `--classes_of_interest ["person", "bus", "bicycle"]` |
+| `--min_bb_area`                     | Float  | Minimum bounding box area as a percentage of the image area (in decimal).               | `--min_bb_area 0.01`               |
+| `--max_bb_area`                     | Float  | Maximum bounding box area as a percentage of the image area (in decimal).               | `--max_bb_area 0.75`                |
 | `--image_name`                      | String   | Naming convention for output files.                                                     | `--image_name frame_{index}`       |
