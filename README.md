@@ -22,7 +22,7 @@
 Example running on all frames of ./video.mp4 video.
     - **For Python**:
         ```bash
-        python create_pseudo_data.py --input_video_path "street_video.mp4" --n_runs "all" 
+        python create_pseudo_data.py --input_video_path 'street_video.mp4' --n_runs 'all' 
         ```
 
  ### Arguments Table
