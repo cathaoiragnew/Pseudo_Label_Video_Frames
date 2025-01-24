@@ -5,7 +5,7 @@
 1. Clone the repository:
     ```bash
     git clone https://github.com/cathaoiragnew/Pseudo_Label_Video_Frames.git
-    cd my_project
+    cd Pseudo_Label_Video_Frames 
     ```
 
 2. Install dependencies:
