@@ -1,11 +1,11 @@
-# Extract Pseudo labelled Imaged from Video
+# Extract Pseudo labelled Images from Video
 
 ## Setup Instructions
 
 1. Clone the repository:
     ```bash
-    git clone https://github.com/yourusername/my_project.git
-    cd my_project
+    git clone https://github.com/cathaoiragnew/Pseudo_Label_Video_Frames.git
+    cd Pseudo_Label_Video_Frames
     ```
 
 2. Install dependencies:
