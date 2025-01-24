@@ -1,4 +1,4 @@
-# Extract Pseudo labelled Imaged from Video
+# Extract Pseudo labelled Images from Video
 
 ## Setup Instructions
 
