@@ -8,7 +8,14 @@
     cd Pseudo_Label_Video_Frames
     ```
 
-2. Install dependencies:
+2. Set Up a Virtual Environment
+    - **For Python**:
+        ```bash
+        python -m venv venv
+        source venv/bin/activate  # On Windows: venv\Scripts\activate
+        ```
+
+3. Install dependencies:
     - **For Python**:
         ```bash
         pip install -r requirements.txt
