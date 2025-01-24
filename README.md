@@ -51,3 +51,11 @@
 | `--min_bb_area`                     | Float  | Minimum bounding box area as a percentage of the image area (in decimal).               | `--min_bb_area 0.01`               |
 | `--max_bb_area`                     | Float  | Maximum bounding box area as a percentage of the image area (in decimal).               | `--max_bb_area 0.75`                |
 | `--image_name`                      | String   | Naming convention for output files.                                                     | `--image_name frame_{index}`       |
+
+
+### Example 
+
+<video width="640" height="360" controls>
+  <source src="street_video.mp4" type="video/mp4">
+  Your browser does not support the video tag.
+</video>
