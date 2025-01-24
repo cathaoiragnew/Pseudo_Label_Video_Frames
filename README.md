@@ -4,7 +4,7 @@
 
 1. Clone the repository:
     ```bash
-    git clone https://github.com/yourusername/my_project.git
+    git clone https://github.com/cathaoiragnew/Pseudo_Label_Video_Frames.git
     cd my_project
     ```
 
