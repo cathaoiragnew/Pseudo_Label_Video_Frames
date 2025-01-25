@@ -27,7 +27,7 @@
         python create_pseudo_data.py [OPTIONS]
         ```
         
-    Example running on all frames of example video provided street_video.mp4 for all frames.
+    Example running on all frames of example video provided street_video.mp4.
     - **For Python**:
         ```bash
         python create_pseudo_data.py --input_video_path 'street_video.mp4' --n_runs 'all' 
